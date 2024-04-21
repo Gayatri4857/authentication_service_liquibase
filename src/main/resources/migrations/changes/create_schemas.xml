@@ -3,7 +3,7 @@
                    
     <changeSet author="Gayatri Shinde" id="202200717">
         <sql stripComments="true">
-            CREATE SCHEMA IF NOT EXISTS service;
+            CREATE SCHEMA IF NOT EXISTS auth_service_db;
         </sql>
     </changeSet>
     

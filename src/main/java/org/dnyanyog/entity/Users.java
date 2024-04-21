@@ -15,7 +15,7 @@ public class Users {
   @Column(name = "user_code", nullable = false, updatable = false, insertable = false)
   private long user_code;
 
-  @Column(name = "userId", nullable = false, updatable = false)
+  @Column(name = "user_id", nullable = false, updatable = false)
   private long userId;
 
   @Column(name = "username", nullable = false, length = 50)
@@ -26,10 +26,6 @@ public class Users {
   @Column private String email;
 
   @Column private int age;
-
-  @Column private String gender;
-
-  @Column private double discountPercentage;
 
   public static Users getInstance() {
     return new Users();
@@ -85,21 +81,5 @@ public class Users {
 
   public void setAge(int age) {
     this.age = age;
-  }
-
-  public String getGender() {
-    return gender;
-  }
-
-  public void setGender(String gender) {
-    this.gender = gender;
-  }
-
-  public double getDiscountPercentage() {
-    return discountPercentage;
-  }
-
-  public void setDiscountPercentage(double discountPercentage) {
-    this.discountPercentage = discountPercentage;
   }
 }
